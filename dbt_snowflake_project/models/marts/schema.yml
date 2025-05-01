@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: source_name
+    database: "{{ target.database }}"
+    schema: "{{ target.schema }}"
+    tables:
+      - name: source_table_name
+        description: "This is a description of the source table."
+        columns:
+          - name: column_name
+            description: "This is a description of the column."
+            tests:
+              - not_null
+              - unique
