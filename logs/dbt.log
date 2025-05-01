@@ -82,3 +82,32 @@ Happy modeling!
 [0m13:39:33.263900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B90E659120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B91045DD80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B91045D3F0>]}
 [0m13:39:33.263900 [debug] [MainThread]: Flushing usage events
 [0m13:39:34.916930 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:59:20.012833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3D4849120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3D655D720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3D655D540>]}
+
+
+============================== 13:59:20.012833 | 9f0a69d0-f9b2-4679-ae72-cc2b3776d0f6 ==============================
+[0m13:59:20.012833 [info ] [MainThread]: Running with dbt=1.9.4
+[0m13:59:20.012833 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\user\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init dbt_snowflake_project', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:59:20.029501 [debug] [MainThread]: Starter project path: C:\Users\user\Documents\Pizza-Sales-Project\env\lib\site-packages\dbt\include\starter_project
+[0m13:59:20.063976 [info ] [MainThread]: 
+Your new dbt project "dbt_snowflake_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:59:20.063976 [info ] [MainThread]: Setting up your profile.
+[0m14:01:04.067190 [info ] [MainThread]: Profile dbt_snowflake_project written to C:\Users\user\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:01:04.068813 [debug] [MainThread]: Command `dbt init` succeeded at 14:01:04.068813 after 104.19 seconds
+[0m14:01:04.069857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3D4849120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3D655D4E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3D602D900>]}
+[0m14:01:04.069857 [debug] [MainThread]: Flushing usage events
+[0m14:01:05.731957 [debug] [MainThread]: An error was encountered while trying to flush usage events
