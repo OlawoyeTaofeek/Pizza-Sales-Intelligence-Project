@@ -1,6 +1,11 @@
 import pandas as pd
 import psycopg2
 from sqlalchemy import create_engine
+from dotenv import load_dotenv
+
+import os
+# Load .env variables
+load_dotenv()
 
 # === Read the CSV ===
 merged_df = pd.read_csv("data/full_pizza_orders_flat.csv")
@@ -9,9 +14,9 @@ merged_df = pd.read_csv("data/full_pizza_orders_flat.csv")
 # Update these with your PostgreSQL credentials
 host = "localhost"
 port = "5433"
-dbname = "your_dbname"
-user = "your_username"
-password = "your_password"
+dbname = os.getenv("POSTGRES_DB")
+user = os.getenv("POSTGRES_USER")
+password = os.getenv("POSTGRES_PASSWORD")
 
 # Create the connection URL
 conn_str = f"postgresql://{user}:{password}@{host}:{port}/{dbname}"
