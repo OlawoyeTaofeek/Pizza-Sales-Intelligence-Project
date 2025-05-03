@@ -87,3 +87,23 @@ cs.close()
 conn.close()
 
 print("✅ Data has been successfully pushed to Snowflake.")
+
+# COPY INTO "PIZZA_DB"."PIZZA"."PIZZA_ORDERS"
+# FROM (
+#     SELECT $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11
+#     FROM '@"PIZZA_DB"."PIZZA"."__snowflake_temp_import_files__"'
+# )
+# FILES = ('2025-05-03T10:40:00.768Z/full_pizza_orders_flat.csv')
+# FILE_FORMAT = (
+#     TYPE=CSV,
+#     SKIP_HEADER=-1,
+#     FIELD_DELIMITER=',',
+#     TRIM_SPACE=TRUE,
+#     FIELD_OPTIONALLY_ENCLOSED_BY='"',
+#     REPLACE_INVALID_CHARACTERS=TRUE,
+#     DATE_FORMAT=AUTO,
+#     TIME_FORMAT=AUTO,
+#     TIMESTAMP_FORMAT=AUTO
+# )
+# ON_ERROR=ABORT_STATEMENT;
+# -- For more details, see: https://docs.snowflake.com/en/sql-reference/sql/copy-into-table

@@ -1,15 +1,46 @@
 version: 2
 
 sources:
-  - name: source_name
-    database: Pizza_db
-    schema: Pizza
+  - name: PIZZA
+    database: PIZZA_DB
+    schema: PIZZA
     tables:
-      - name: source_table_name
-        description: "This is a description of the source table."
+      - name: PIZZA_ORDERS
+        description: "Raw pizza order data including timestamp, quantity, and pizza details"
         columns:
-          - name: column_name
-            description: "This is a description of the column."
+          - name: order_id
+            description: "Unique identifier for each order"
             tests:
               - not_null
-              - unique
+
+          - name: pizza_id
+            description: "Unique identifier for the specific pizza ordered"
+            tests:
+              - not_null
+
+          - name: quantity
+            description: "Number of pizzas ordered"
+
+          - name: order_date
+            description: "Date when the order was placed"
+
+          - name: order_time
+            description: "Time when the order was placed"
+
+          - name: pizza_type_id
+            description: "Reference to the type of pizza"
+
+          - name: pizza_size
+            description: "Size of the pizza (e.g., S, M, L, XL)"
+
+          - name: price
+            description: "Price of the pizza for the given size and type"
+
+          - name: name
+            description: "Human-readable name of the pizza"
+
+          - name: category
+            description: "Category of the pizza (e.g., Meat, Veggie, Vegan)"
+
+          - name: ingredients
+            description: "Comma-separated list of ingredients for the pizza"
